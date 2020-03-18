@@ -1,0 +1,205 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+/* UTILITIES */
+.disp-flex {
+  display: flex;
+}
+
+.flex-dir-clm {
+  flex-direction: column;
+}
+
+.border-radius {
+  border-radius: 50%;
+}
+
+.pd-left-20 {
+  padding-left: 20px;
+}
+
+
+/* LAYOUT */
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+/* MAIN WINDOW */
+#main-window {
+  flex-grow: 1;
+  display: flex;
+}
+
+
+/* SIDEBAR */
+#sidebar {
+  flex-basis: 230px; /* larghezza sidebar */
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-top {
+  height: 500px; /*debug*/
+  flex-direction: column;
+  flex-grow: 1;
+  background: #000;
+}
+
+.sidebar-top-options a {
+  align-items: center;
+}
+
+.sidebar-top .logo-spotify {
+  width: 165px;
+  height: 90px;
+}
+
+.sidebar-top-options img {
+  width: 30px;
+}
+
+.sidebar-top-playlist {
+  flex-direction: column;
+}
+
+.sidebar-top-playlist i {
+  font-size: 20px;
+  vertical-align: middle;
+  background: #555;
+  padding: 10px;
+}
+
+.sidebar-bottom {
+  height: 80px; /*debug*/
+  background: #000;
+}
+
+.sidebar-bottom a:nth-child(1) i {
+  width: 90%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.sidebar-bottom a:nth-child(2) img {
+  width: 20px;
+  background: #555;
+}
+
+
+/* CONTENT */
+#content {
+  position: relative;
+  flex-grow: 1;
+  background: #000;
+}
+
+.content-top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: rgba(0, 0, 0, .5);
+  z-index: 1;
+}
+
+.content-top-bar span {
+  max-width: 100%;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.content-top-bar span a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  font-size: 9px;
+  padding: 8px 25px;
+}
+
+
+
+#content .scrollable {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #010111;;
+  /* 90px = height di content-top-bar */
+  padding: 90px 15px 30px;
+}
+
+.content-menu {
+  padding-bottom: 30px;
+}
+
+.content-menu ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  list-style: none;
+}
+
+.content-menu ul a {
+  font-size: 10px;
+  padding-right: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.content-category {
+  flex-direction: column;
+  /*min-height: 200px; /* Debug */
+}
+
+.content-category h2 {
+  font-size: 20px;
+}
+
+.content-card {
+  flex-basis: calc(100% / 6);
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+
+.content-card img {
+  width: 100%;
+}
+
+
+/* BOTTOM PLAYER */
+#player {
+  justify-content: space-between;
+  align-items: center;
+  /* min-height: 80px; /*debug*/
+  background: #151515;
+}
+
+.player-brano {
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.player-brano img {
+  width: 50px;
+  height: 50px;
+}

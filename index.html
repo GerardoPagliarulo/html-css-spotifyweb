@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html-css-spotifyweb</title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <div id="app">
+        <!-- Main content -->
+        <main id="main-window">
+          <!-- Sidebar -->
+          <aside id="sidebar">
+            <div class="sidebar-top pd-left-20 disp-flex">
+              <img class="logo-spotify "src="img/logo.svg" alt="Spotify Logo">
+              <div class="sidebar-top-options disp-flex">
+                <a class="disp-flex" href="#">
+                  <img src="img/home.svg" alt="Home Logo">
+                  <span>Home</span>
+                </a>
+              </div>
+              <div class="sidebar-top-options disp-flex">
+                <a class="disp-flex" href="#">
+                  <img src="img/search.svg" alt="Search Logo">
+                  <span>Cerca</span>
+                </a>
+              </div>
+              <div class="sidebar-top-options disp-flex">
+                <a class="disp-flex" href="#">
+                  <img src="img/Libreria.svg" alt="Libreria Logo">
+                  <span>La tua libreria</span>
+                </a>
+              </div>
+              <div class="sidebar-top-playlist disp-flex">
+                <h3>Playlist</h3>
+                <a class="disp-flex" href="#">
+                <span>
+                  <i class="fas fa-plus"></i>
+                  Crea Playlist
+                </span>
+                </a>
+                <a class="disp-flex flex-dir-clm" href="#">
+                  <span>Nuova Playlist</span>
+                  <span>Nuova Playlist</span>
+                  <span>Nuova Playlist</span>
+                  <span>Nuova Playlist</span>
+                  <span>Nuova Playlist</span>
+                  <span>Nuova Playlist</span>
+                  <span>Nuova Playlist</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="sidebar-bottom pd-left-20 disp-flex flex-dir-clm">
+              <a href="#">
+                <span>
+                  <i class="far fa-arrow-alt-circle-down"> Installa app</i>
+                </span>
+              </a>
+              <a class="disp-flex" href="#">
+                <img class="border-radius" src="img/profile.svg" alt="Profile Image">
+                <h3>John Doe</h3>
+              </a>
+            </div>
+          </aside>
+
+          <!-- Content -->
+          <div id="content">
+            <div class="content-top-bar">
+              <span>
+                <a href="#">EFFETTUA L'UPGRADE</a>
+              </span>
+            </div>
+            <div class="scrollable">
+              <nav class="content-menu">
+                <ul>
+                  <li>
+                    <a href="#">IN EVIDENZA</a>
+                  </li>
+                  <li>
+                    <a href="#">PODCAST</a>
+                  </li>
+                  <li>
+                    <a href="#">CLASSIFICHE</a>
+                  </li>
+                  <li>
+                    <a href="#">GENERI E MOOD</a>
+                  </li>
+                  <li>
+                    <a href="#">NUOVE USCITE</a>
+                  </li>
+                  <li>
+                    <a href="#">SCOPRI</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <section class="content-category disp-flex">
+                <h2>Recently played</h2>
+                <div class="disp-flex">
+                  <div class="content-card">
+                    <a href="#">
+                      <img src="img/metal_lifting.jpg" alt="Heavy Metal Image">
+                      <h3>Heavy Metal</h3>
+                      <span>Subtitle</span>
+                    </a>
+                  </div>
+                  <div class="content-card">
+                    <img src="img/stranger.jpeg" alt="Stranger Things Image">
+                    <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                    <span>Kyle Dixon & Michael Stein</span>
+                  </div>
+                  <div class="content-card">
+                    <img src="img/aquietplace.jpeg" alt="A quiet place Image">
+                    <h3>A quiet place</h3>
+                    <span>Subtitle</span>
+                  </div>
+                  <div class="content-card">
+                    <img src="img/split.jpeg" alt="Split Image">
+                    <h3>Split</h3>
+                    <span>Subtitle</span>
+                  </div>
+                  <div class="content-card">
+                    <img src="img/cure.jpeg" alt="A cure for wellness Image">
+                    <h3>A cure for wellness</h3>
+                    <span>Subtitle</span>
+                  </div>
+                  <div class="content-card">
+                    <img src="img/sinister.jpeg" alt="Sinister Image">
+                    <h3>Sinister</h3>
+                    <span>Subtitle</span>
+                  </div>
+                </div>
+              </section>
+
+              <section class="content-category">
+                <h2>Crearo per John Doe</h2>
+                <span>Più ascolti, più accurati saranno i suggerimenti</span>
+                <div class="disp-flex">
+                  <div class="content-card">
+                    <img src="img/radar.jpeg" alt="Release Radar Image">
+                    <h3>Release Radar</h3>
+                  </div>
+                  <div class="content-card">
+                    <img src="img/mixdaily.jpeg" alt="Daily Mix Image">
+                    <h3>Daily Mix</h3>
+                  </div>
+                </div>
+              </section>
+              <section class="content-category">
+                <h2>Artisti più popolari</h2>
+                <span>Più ascolti, più accurati saranno i suggerimenti</span>
+                <div class="disp-flex">
+                  <div class="content-card">
+                    <img class="border-radius"src="img/young.jpeg" alt="Lana del Rey Image">
+                    <h3>Lana Del Rey</h3>
+                  </div>
+                  <div class="content-card">
+                    <img class="border-radius"src="img/einaudi.jpeg" alt="Ludovico Einaudi Image">
+                    <h3>Ludovico Einaudi</h3>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </main>
+
+        <!-- Bottom Player -->
+        <footer id="player" class="disp-flex">
+          <div class="player-brano disp-flex">
+            <a class="disp-flex" href="#">
+              <img src="img/sinister.jpeg" alt="Sinister Image">
+              <a class="disp-flex flex-dir-clm" href="#">
+                <h3>Sinister</h3>
+                <span>Brano nome</span>
+              </a>
+              <a href="#">
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+              </a>
+            </a>
+          </div>
+          <div class="player-actions disp-flex">
+            <a href="#">
+              <i class="fas fa-random"></i>
+              <i class="fas fa-caret-left"></i>
+              <i class="far fa-play-circle"></i>
+              <i class="fas fa-caret-right"></i>
+              <i class="fas fa-redo-alt"></i>
+            </a>
+          </div>
+
+          <div class="player-volume disp-flex">
+            <a href="#">
+              <i class="fas fa-list-ul"></i>
+              <i class="fas fa-desktop"></i>
+              <i class="fas fa-volume-up"></i>
+            </a>
+          </div>
+
+
+
+
+        </footer>
+    </div>
+
+</body>
+</html>
