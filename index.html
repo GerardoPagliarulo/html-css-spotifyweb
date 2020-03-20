@@ -6,6 +6,7 @@
     <title>html-css-spotifyweb</title>
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css-pd-mg/pd-mg.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -15,55 +16,97 @@
         <main id="main-window">
           <!-- Sidebar -->
           <aside id="sidebar">
-            <div class="sidebar-top pd-left-20 disp-flex">
+            <div class="sidebar-top">
               <a href="#">
-                <img class="logo-spotify "src="img/logo.svg" alt="Spotify Logo">
+                <img class="logo-spotify disp-flex mg-left-20" src="img/logo.svg" alt="Spotify Logo">
               </a>
-              <div class="sidebar-top-options disp-flex">
-                <a class="disp-flex" href="#">
-                  <img src="img/home.svg" alt="Home Logo">
-                  <span>Home</span>
-                </a>
+              <div class="sidebar-top-options">
+                <ul class="disp-flex flex-dir-cln font-size-13 mg-bottom-10">
+                  <li class="mg-bottom-10">
+                    <a class="disp-flex align-it-center" href="#">
+                      <img class="mg-left-20 mg-right-10" src="img/home.svg" alt="Home Logo">
+                      <span class="color">Home</span>
+                    </a>
+                  </li>
+                  <li class="mg-bottom-10">
+                    <a class="disp-flex align-it-center" href="#">
+                      <img class="mg-left-20 mg-right-10" src="img/search.svg" alt="Search Logo">
+                      <span class="color">Cerca</span>
+                    </a>
+                  </li>
+                  <li class="mg-bottom-20">
+                    <a class="disp-flex align-it-center" href="#">
+                      <img class="mg-left-20 mg-right-10" src="img/Libreria.svg" alt="Libreria Logo">
+                      <span class="color">La tua libreria</span>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <div class="sidebar-top-options disp-flex">
-                <a class="disp-flex" href="#">
-                  <img src="img/search.svg" alt="Search Logo">
-                  <span>Cerca</span>
-                </a>
-              </div>
-              <div class="sidebar-top-options disp-flex">
-                <a class="disp-flex" href="#">
-                  <img src="img/Libreria.svg" alt="Libreria Logo">
-                  <span>La tua libreria</span>
-                </a>
-              </div>
-              <div class="sidebar-top-playlist disp-flex">
-                <h3>Playlist</h3>
-                <a class="disp-flex align-it-center" href="#">
-                  <i class="fas fa-plus"></i>
-                  <span>Crea Playlist</span>
-                </a>
-                <a class="disp-flex flex-dir-clm" href="#">
-                  <span>Nuova Playlist</span>
-                  <span>Nuova Playlist</span>
-                  <span>Nuova Playlist</span>
-                  <span>Nuova Playlist</span>
-                  <span>Nuova Playlist</span>
-                  <span>Nuova Playlist</span>
-                  <span>Nuova Playlist</span>
-                </a>
+              <!-- Playlist -->
+              <div class="sidebar-top-playlist disp-flex flex-dir-cln mg-left-20">
+                <h4>PLAYLIST</h4>
+                <ul class="font-size-13 mg-top-15">
+                  <li class="mg-bottom-20">
+                    <a class="disp-flex align-it-center color" href="#">
+                      <!-- <i class="fas fa-plus mg-right-10"></i> -->
+                      <i class="fas fa-plus-square mg-right-10"></i>
+                      <span class="color">Crea Playlist</span>
+                    </a>
+                  </li>
+                  <li class="mg-bottom-20">
+                    <a href="#">
+                      <span class="color">Nuova Playlist</span>
+                    </a>
+                  </li>
+                  <li class="mg-bottom-20">
+                    <a href="#">
+                      <span class="color">Nuova Playlist</span>
+                    </a>
+                  </li>
+                  <li class="mg-bottom-20">
+                    <a href="#">
+                      <span class="color">Nuova Playlist</span>
+                    </a>
+                  </li>
+                  <li class="mg-bottom-20">
+                    <a href="#">
+                      <span class="color">Nuova Playlist</span>
+                    </a>
+                  </li>
+                  <li class="mg-bottom-20">
+                    <a href="#">
+                      <span class="color">Nuova Playlist</span>
+                    </a>
+                  </li>
+                  <li class="mg-bottom-20">
+                    <a href="#">
+                      <span class="color">Nuova Playlist</span>
+                    </a>
+                  </li>
+                  <li class="mg-bottom-20">
+                    <a href="#">
+                      <span class="color">Nuova Playlist</span>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
 
-            <div class="sidebar-bottom pd-left-20 disp-flex flex-dir-clm">
-              <a class="disp-flex" href="#">
-                <i class="far fa-arrow-alt-circle-down"></i>
-                <span>Installa app</span>
-              </a>
-              <a class="disp-flex" href="#">
-                <img class="border-radius" src="img/profile.svg" alt="Profile Image">
-                <h3>John Doe</h3>
-              </a>
+            <div class="sidebar-bottom pd-left-20 disp-flex flex-dir-cln">
+              <ul class="font-size-13 mg-bottom-10">
+                <li class="pd-bottom-10">
+                  <a class="disp-flex align-it-center color" href="#">
+                    <i class="far fa-arrow-alt-circle-down mg-right-10"></i>
+                    <span>Installa app</span>
+                  </a>
+                </li>
+                <li class="pd-top-10">
+                  <a class="disp-flex align-it-center" href="#">
+                    <img class="border-radius mg-right-10" src="img/profile.svg" alt="Profile Image">
+                    <h4>John Doe</h4>
+                  </a>
+                </li>
+              </ul>
             </div>
           </aside>
 
@@ -75,111 +118,153 @@
               </span>
             </div>
             <div class="scrollable">
-              <nav class="content-menu">
-                <ul>
+              <nav class="content-menu mg-bottom-30">
+                <ul class="mg-top-15">
                   <li>
-                    <a href="#">IN EVIDENZA</a>
+                    <a class="mg-right-15" href="#">IN EVIDENZA</a>
                   </li>
                   <li>
-                    <a href="#">PODCAST</a>
+                    <a class="mg-right-15" href="#">PODCAST</a>
                   </li>
                   <li>
-                    <a href="#">CLASSIFICHE</a>
+                    <a class="mg-right-15" href="#">CLASSIFICHE</a>
                   </li>
                   <li>
-                    <a href="#">GENERI E MOOD</a>
+                    <a class="mg-right-15" href="#">GENERI E MOOD</a>
                   </li>
                   <li>
-                    <a href="#">NUOVE USCITE</a>
+                    <a class="mg-right-15" href="#">NUOVE USCITE</a>
                   </li>
                   <li>
-                    <a href="#">SCOPRI</a>
+                    <a class="mg-right-15" href="#">SCOPRI</a>
                   </li>
                 </ul>
               </nav>
 
               <section class="content-category disp-flex">
-                <h2>Recently played</h2>
+                <h2 class="mg-bottom-30">Recently played</h2>
                 <div class="disp-flex">
                   <div class="content-card">
                     <a href="#">
+                      <div class="overlay">
+                        <i class="far fa-play-circle"></i>
+                      </div>
                       <img src="img/metal_lifting.jpg" alt="Heavy Metal Image">
                     </a>
-                      <h3>Heavy Metal</h3>
-                      <span>Subtitle</span>
+                      <h4 class="pd-top-20">Heavy Metal</h4>
+                      <a class="pd-top-10" href="#">
+                        <span class="color font-size-11">Subtitle</span>
+                      </a>
                   </div>
-                  <div class="content-card">
+                  <div class="content-card mg-right-10">
                     <a href="#">
+                      <div class="overlay">
+                        <i class="far fa-play-circle"></i>
+                      </div>
                       <img src="img/stranger.jpeg" alt="Stranger Things Image">
                     </a>
-                    <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
-                    <span>Kyle Dixon & Michael Stein</span>
+                    <h4 class="pd-top-20 text-center">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                    <a class="pd-top-10" href="#">
+                      <span class="color font-size-11">Kyle Dixon & Michael Stein</span>
+                    </a>
                   </div>
-                  <div class="content-card">
+                  <div class="content-card mg-right-10">
                     <a href="#">
+                      <div class="overlay">
+                        <i class="far fa-play-circle"></i>
+                      </div>
                       <img src="img/aquietplace.jpeg" alt="A quiet place Image">
                     </a>
-                    <h3>A quiet place</h3>
-                    <span>Subtitle</span>
+                    <h4 class="pd-top-20">A quiet place</h4>
+                    <a class="pd-top-10" href="#">
+                      <span class="color font-size-11">Subtitle</span>
+                    </a>
                   </div>
-                  <div class="content-card">
+                  <div class="content-card mg-right-10">
                     <a href="#">
+                      <div class="overlay">
+                        <i class="far fa-play-circle"></i>
+                      </div>
                       <img src="img/split.jpeg" alt="Split Image">
                     </a>
-                    <h3>Split</h3>
-                    <span>Subtitle</span>
+                    <h4 class="pd-top-20">Split</h4>
+                    <a class="pd-top-10" href="#">
+                      <span class="color font-size-11">Subtitle</span>
+                    </a>
                   </div>
-                  <div class="content-card">
+                  <div class="content-card mg-right-10">
                     <a href="#">
+                      <div class="overlay">
+                        <i class="far fa-play-circle"></i>
+                      </div>
                       <img src="img/cure.jpeg" alt="A cure for wellness Image">
                     </a>
-                    <h3>A cure for wellness</h3>
-                    <span>Subtitle</span>
+                    <h4 class="pd-top-20">A cure for wellness</h4>
+                    <a class="pd-top-10" href="#">
+                      <span class="color font-size-11">Subtitle</span>
+                    </a>
                   </div>
-                  <div class="content-card">
+                  <div class="content-card mg-right-10">
                     <a href="#">
+                      <div class="overlay">
+                        <i class="far fa-play-circle"></i>
+                      </div>
                       <img src="img/sinister.jpeg" alt="Sinister Image">
                     </a>
-                    <h3>Sinister</h3>
-                    <span>Subtitle</span>
+                    <h4 class="pd-top-20">Sinister</h4>
+                    <a class="pd-top-10" href="#">
+                      <span class="color font-size-11">Subtitle</span>
+                    </a>
                   </div>
                 </div>
               </section>
 
               <section class="content-category">
-                <h2>Crearo per John Doe</h2>
-                <span>Più ascolti, più accurati saranno i suggerimenti</span>
-                <div class="disp-flex">
-                  <div class="content-card">
+                <h2 class="mg-bottom-20 mg-top-50">Crearo per John Doe</h2>
+                <span class="font-size-11  color">Più ascolti, più accurati saranno i suggerimenti</span>
+                <div class="disp-flex mg-top-30">
+                  <div class="content-card mg-right-10">
                     <a href="#">
+                      <div class="overlay">
+                        <i class="far fa-play-circle"></i>
+                      </div>
                       <img src="img/radar.jpeg" alt="Release Radar Image">
                     </a>
-                    <h3>Release Radar</h3>
+                    <h4 class="pd-top-20">Release Radar</h4>
                   </div>
                   <div class="content-card">
                     <a href="#">
+                      <div class="overlay">
+                        <i class="far fa-play-circle"></i>
+                      </div>
                       <img src="img/mixdaily.jpeg" alt="Daily Mix Image">
                     </a>
-                    <h3>Daily Mix</h3>
+                    <h5 class="pd-top-20">Daily Mix</h5>
                   </div>
                 </div>
               </section>
 
               <section class="content-category">
-                <h2>Artisti più popolari</h2>
-                <span>Più ascolti, più accurati saranno i suggerimenti</span>
-                <div class="disp-flex">
-                  <div class="content-card">
+                <h2 class="mg-bottom-20 mg-top-50">Artisti più popolari</h2>
+                <span class="font-size-11 color">Più ascolti, più accurati saranno i suggerimenti</span>
+                <div class="disp-flex mg-top-30">
+                  <div class="content-card mg-right-10">
                     <a href="#">
+                      <div class="overlay border-radius">
+                        <i class="far fa-play-circle"></i>
+                      </div>
                       <img class="border-radius"src="img/young.jpeg" alt="Lana del Rey Image">
                     </a>
-                    <h3>Lana Del Rey</h3>
+                    <h4 class="pd-top-20">Lana Del Rey</h4>
                   </div>
                   <div class="content-card">
                     <a href="#">
+                      <div class="overlay border-radius">
+                        <i class="far fa-play-circle"></i>
+                      </div>
                       <img class="border-radius"src="img/einaudi.jpeg" alt="Ludovico Einaudi Image">
                     </a>
-                    <h3>Ludovico Einaudi</h3>
+                    <h4 class="pd-top-20">Ludovico Einaudi</h4>
                   </div>
                 </div>
               </section>
@@ -189,41 +274,92 @@
 
         <!-- Bottom Player -->
         <footer id="player" class="disp-flex">
-          <div class="player-brano disp-flex">
-            <a class="disp-flex" href="#">
-              <img src="img/sinister.jpeg" alt="Sinister Image">
-              <a class="disp-flex flex-dir-clm" href="#">
-                <h3>Sinister</h3>
-                <span>Brano nome</span>
-              </a>
-              <a href="#">
-                <i class="far fa-heart"></i>
-                <i class="far fa-folder"></i>
-              </a>
-            </a>
+          <div class="player-brano">
+            <ul class="disp-flex align-it-center">
+              <li class="disp-flex align-it-center mg-right-50">
+                <a href="#">
+                  <img class="mg-right-10" src="img/sinister.jpeg" alt="Sinister Image">
+                </a>
+                <a href="#">
+                  <h5>Sinister</h5>
+                  <span class="font-size-11 color">Brano nome</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="far fa-heart color mg-right-10"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="far fa-folder color mg-right-10"></i>
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="player-actions disp-flex flex-dir-clm align-it-center">
-            <a href="#">
-              <i class="fas fa-random"></i>
-              <i class="fas fa-caret-left"></i>
-              <i class="far fa-play-circle"></i>
-              <i class="fas fa-caret-right"></i>
-              <i class="fas fa-redo-alt"></i>
-            </a>
+
+          <div class="player-actions disp-flex flex-dir-cln align-it-center">
+            <ul class="disp-flex align-it-center mg-bottom-15">
+              <li>
+                <a href="#">
+                  <i class="fas fa-random mg-right-20"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-caret-left font-size-25 mg-right-20"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="far fa-play-circle font-size-25 mg-right-20"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-caret-right font-size-25 mg-right-20"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-redo-alt"></i>
+                </a>
+              </li>
+            </ul>
             <div class="disp-flex align-it-center">
-              <span>0:25</span>
-              <div class="player-actions-time"></div>
-              <span>4:35</span>
+              <span class="font-size-11 mg-right-30">0:25</span>
+              <div class="player-actions-time">
+                <a href="#">
+                  <div class="player-actions-progress"></div>
+                </a>
+              </div>
+              <span class="font-size-11 mg-left-30">4:35</span>
             </div>
           </div>
 
           <div class="player-volume disp-flex align-it-center">
-            <a href="#">
-              <i class="fas fa-list-ul"></i>
-              <i class="fas fa-desktop"></i>
-              <i class="fas fa-volume-up"></i>
-            </a>
-            <div class="player-volume-hight"></div>
+            <ul class="disp-flex align-it-center">
+              <li>
+                <a href="#">
+                  <i class="fas fa-list-ul mg-right-15"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-desktop mg-right-15"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-volume-up mg-right-15"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="player-volume-hight">
+              <a href="#">
+                <div class="player-volume-livel"></div>
+              </a>
+            </div>
           </div>
         </footer>
     </div>

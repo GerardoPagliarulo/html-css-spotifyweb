@@ -10,9 +10,14 @@ body {
   color: #fff;
 }
 
+
 /* UTILITIES */
 .disp-flex {
   display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
 
 .justify-cont-center {
@@ -23,7 +28,7 @@ body {
   align-items: center;
 }
 
-.flex-dir-clm {
+.flex-dir-cln {
   flex-direction: column;
 }
 
@@ -31,13 +36,37 @@ body {
   border-radius: 50%;
 }
 
-.pd-left-20 {
-  padding-left: 20px;
-}
-
 a {
   color: #fff;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.font-size-11 {
+  font-size: 11px;
+}
+
+.font-size-13 {
+  font-size: 13px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-25 {
+  font-size: 25px;
+}
+
+.color {
+  color:  #999;
+}
+
+.text-center {
+  text-align: center;
 }
 
 
@@ -64,14 +93,10 @@ a {
 }
 
 .sidebar-top {
-  height: 500px; /*debug*/
+  /* min-height: 700px; /*debug*/
   flex-direction: column;
   flex-grow: 1;
   background: #000;
-}
-
-.sidebar-top-options a {
-  align-items: center;
 }
 
 .sidebar-top .logo-spotify {
@@ -80,34 +105,58 @@ a {
 }
 
 .sidebar-top-options img {
-  width: 30px;
+  width: 25px;
 }
 
-.sidebar-top-playlist {
-  flex-direction: column;
+/* .sidebar-top-options ul li a span:hover {
+  color: #fff;
+} */
+
+.sidebar-top-options ul li a:hover,
+.sidebar-top-options ul li a:focus {
+  color: #fff;
+  border-left: 2px solid rgba(0, 255, 0, 0.5);
 }
 
 .sidebar-top-playlist i {
+  color: #999;
+  font-size: 50px;
+}
+
+/* .sidebar-top-playlist i {
   color: #000;
-  font-size: 20px;
-  background: #555;
+  text-align: center;
   padding: 15px;
+  font-size: 20px;
+  background: #777;
+} */
+
+.sidebar-top-playlist ul li span:hover {
+  color: #fff;
+}
+
+.sidebar-top-playlist ul li i:hover {
+  color: #fff;
 }
 
 .sidebar-bottom {
-  height: 80px; /*debug*/
+  /* height: 80px; /*debug  */
   background: #000;
 }
-.sidebar-bottom a:first-child {
+.sidebar-bottom ul li:first-child {
   width: 90%;
-  border-bottom: 1px solid white;
-  padding-bottom: 10px;
+  border-bottom: 1px solid #999;
 }
 
-.sidebar-bottom a:nth-child(2) img {
-  width: 20px;
-  background: #555;
+.sidebar-bottom ul li a:first-child:hover {
+  color: #fff;
 }
+
+.sidebar-bottom img {
+  width: 22px;
+  background: #888;
+}
+
 
 /* CONTENT */
 #content {
@@ -144,8 +193,6 @@ a {
   padding: 8px 25px;
 }
 
-
-
 #content .scrollable {
   position: absolute;
   top: 0;
@@ -158,27 +205,56 @@ a {
   padding: 90px 15px 30px;
 }
 
-.content-menu {
-  padding-bottom: 30px;
-}
-
 .content-menu ul {
   display: flex;
   justify-content: center;
-  padding-top: 15px;
   list-style: none;
 }
 
 .content-menu ul a {
-  font-size: 10px;
-  padding-right: 15px;
+  font-size: 11px;
   text-decoration: none;
+  color: #999;
+}
+
+.content-menu ul a:hover,
+.content-menu ul a:focus {
   color: #fff;
+  border-bottom: 2px solid rgba(0, 255, 0, 0.5);
 }
 
 .content-category {
   flex-direction: column;
   /*min-height: 200px; /* Debug */
+}
+
+.content-category a {
+  position: relative;
+}
+
+.content-category a:hover .overlay {
+  opacity: 1;
+}
+
+.overlay  {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s;
+  background-color: rgba(9, 7, 7, .6);
+}
+
+.overlay i {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .content-category h2 {
@@ -188,8 +264,12 @@ a {
 .content-card {
   flex-basis: calc(100% / 6);
   display: flex;
+  align-items: center;
   flex-direction: column;
-  padding-right: 10px;
+}
+
+.content-card span:hover {
+  color: #fff;
 }
 
 .content-card img {
@@ -201,13 +281,13 @@ a {
 #player {
   justify-content: space-between;
   align-items: center;
-  /* min-height: 80px; /*debug*/
+  /* min-height: 80px; /*debug */
+  padding: 20px 15px;
   background: #151515;
 }
 
 .player-brano {
   align-items: center;
-  padding: 20px 15px;
 }
 
 .player-brano img {
@@ -215,12 +295,46 @@ a {
   height: 50px;
 }
 
+.player-brano ul li span:hover {
+  color: #fff;
+}
+
+.player-brano ul li i:hover {
+  color: #fff;
+}
+
 .player-actions-time {
+  position: relative;
   width: 435px;
   border-bottom: 4px solid rgba(70, 61, 61, 1);
+  border-radius: 50px;
+}
+
+.player-actions-progress {
+  position: absolute;
+  width: 100px;
+  border-bottom: 4px solid grey;
+  border-radius: 50px;
+}
+
+.player-actions-time a:hover {
+  color: rgba(0, 255, 0, 0.5);
 }
 
 .player-volume-hight {
-  width: 150px;
+  position: relative;
+  width: 100px;
   border-bottom: 4px solid rgba(70, 61, 61, 1);
+  border-radius: 50px;
+}
+
+.player-volume-livel {
+  position: absolute;
+  width: 35px;
+  border-bottom: 4px solid grey;
+  border-radius: 50px;
+}
+
+.player-volume-hight a:hover {
+  color: rgba(0, 255, 0, 0.5);
 }
