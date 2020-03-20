@@ -583,7 +583,6 @@ ul {
   }
 }
 
-
 @media all and (min-width: 992px) and (max-width: 1199px) {
   /* CONTENT */
   .content-category-card {
@@ -612,11 +611,11 @@ ul {
   }
 
   .player-brano ul li:first-child {
-    margin-right: 10px;
+    margin-right: 50px;
   }
 
   .player-actions {
-    flex-basis: 600px;
+    flex-basis: 400px;
   }
 
   .player-actions ul {
